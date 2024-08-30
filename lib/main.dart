@@ -8,8 +8,25 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  ThemeMode currentThemeMode = ThemeMode.light;
+
+  void toggleTheme() {
+    setState(() {
+      if (currentThemeMode == ThemeMode.light) {
+        currentThemeMode = ThemeMode.dark;
+      } else {
+        currentThemeMode = ThemeMode.light;
+      }
+    });
+  }
 
   // This widget is the root of your application.
   @override
@@ -17,8 +34,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: const Session04(),
-
+      home: Session04(
+          clickToChangeTheme: toggleTheme, currentThemeMode: currentThemeMode),
+      themeMode: currentThemeMode,
       theme: ThemeData(
         colorScheme: lightColorScheme,
         appBarTheme: appBarTheme,
@@ -28,7 +46,6 @@ class MyApp extends StatelessWidget {
         textTheme: textTheme,
         scaffoldBackgroundColor: Colors.indigo[100],
       ),
-      //
       darkTheme: ThemeData(
         colorScheme: darkColorScheme,
         appBarTheme: appBarThemeDark,
