@@ -11,8 +11,6 @@
 
 # **<span style="text-decoration:underline;">1. Declarative UI vs Imperative</span>**
 
-
-
 * **Declarative:** means that Flutter builds its user interface to reflect the current state of your app. \
 When the state of your app changes, that triggers a redraw of the user interface.
 * **Imperative:**  means  changing of the UI itself (like `widget.setText`) \
@@ -92,8 +90,8 @@ When the state of your app changes, that triggers a redraw of the user interface
         * [textTheme](https://api.flutter.dev/flutter/material/ThemeData/textTheme.html) . [Font sizes](https://api.flutter.dev/flutter/material/TextTheme-class.html)
         * [scaffoldBackgroundColor](https://api.flutter.dev/flutter/material/ThemeData/scaffoldBackgroundColor.html)
         * **fontFamily**: name of the font from an assets font file
-* **Task1: **
-    * **Profile Screen [Figma](https://www.figma.com/design/5ewfZQZFicUbPMEMLhhbYz/Social-App---Free-UI-Kit-%F0%9F%93%B1-(Community)?node-id=1-2382&t=6d3te9yG4jfTfuX6-4) , **
+* **Task1:**
+    * **Profile Screen [Figma](https://www.figma.com/design/5ewfZQZFicUbPMEMLhhbYz/Social-App---Free-UI-Kit-%F0%9F%93%B1-(Community)?node-id=1-2382&t=6d3te9yG4jfTfuX6-4)**
     * **Activities Screen [Figma](https://www.figma.com/design/5ewfZQZFicUbPMEMLhhbYz/Social-App---Free-UI-Kit-%F0%9F%93%B1-(Community)?node-id=1-1327&t=d0olI85FCSLbFWiN-4)**
 
 
@@ -122,7 +120,6 @@ When the state of your app changes, that triggers a redraw of the user interface
 # **<span style="text-decoration:underline;">4. Stateless VS Stateful</span>**
 
 
-
 * Create a new project (default counter) , clear it and rewrite it.
 * Start with creating new Stateful Widget CounterScreen
 * Mention that any stateful need 
@@ -138,7 +135,6 @@ When the state of your app changes, that triggers a redraw of the user interface
 # **<span style="text-decoration:underline;">5. [User Input](https://docs.flutter.dev/ui/widgets/input)</span>**
 
 
-
 * [Text Inputs](https://docs.flutter.dev/ui/widgets/material#text-inputs)
     * [TextInputField](https://api.flutter.dev/flutter/material/TextField-class.html?_gl=1*hza0z6*_ga*NzU1MTQ2NjgxLjE3MjIwMTIxMjE.*_ga_04YGWK0175*MTcyNDAxNzE1Ny4zOC4xLjE3MjQwMTc0MDcuMC4wLjA.)
         * [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)
@@ -150,9 +146,12 @@ When the state of your app changes, that triggers a redraw of the user interface
         * [FormField](https://api.flutter.dev/flutter/widgets/FormField-class.html)
         * [TextFormField](https://api.flutter.dev/flutter/material/TextFormField-class.html)	
 * Create a new project, clear the default code. The app Asks user to enter some info, and click OK, then navigate to another screen to show the inputs added from the previous screen.
-* 
+  
 * **Task4: Todo App [Figma](https://www.figma.com/design/6ZA5YRSMZsMsaC1wnkJAgm/Untitled?node-id=0-1&t=P1ruOj2zfZTmAzV9-1)**
     * Login, 
     * Show list of Items, 
-    * Each Item contains checkbox, swipe to delete 
+    * Each Item contains checkbox, swipe to delete [Slide to delete package](https://pub.dev/packages/flutter_slidable)
     * There is a floating action button to add a new task , it opens a dialog to enter task details.
+    
+
+# **<span style="text-decoration:underline;">6. Reference 9 hours video</span> [Youtube](https://www.youtube.com/watch?v=TclK5gNM_PM)**
