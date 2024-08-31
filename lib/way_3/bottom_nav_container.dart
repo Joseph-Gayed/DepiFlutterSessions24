@@ -44,6 +44,7 @@ class _BottomNavContainerState extends State<BottomNavContainer> {
       body: _pages[selectedPage],
 
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         showSelectedLabels: true,
         showUnselectedLabels: false,
         currentIndex: selectedPage,
